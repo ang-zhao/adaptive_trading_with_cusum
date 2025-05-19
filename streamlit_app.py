@@ -383,7 +383,7 @@ with portfolio_tab:
     # ╰───────────────────────────────────────────────────────────────────────╯
 
     ax.set_ylabel("Cumulative wealth (initial = 1)")
-    ax.set_title("Method-A Momentum – Rebalancing Schedules")
+    ax.set_title("Portfolio Momentum Strategy – Rebalancing Schedules Backtest")
     ax.legend()
     ax.grid(False) 
     ax.spines["right"].set_visible(False)
