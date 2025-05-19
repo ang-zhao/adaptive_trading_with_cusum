@@ -208,19 +208,19 @@ def parse_nums(txt: str, *, as_int=False, allow_none=True) -> tuple:
 ##############################################################################
 # Streamlit UI                                                               #
 ##############################################################################
-st.sidebar.header("Connect with me")
+# st.sidebar.header("Connect with me")
 
-st.sidebar.link_button("GitHub",   "https://github.com/ang-zhao",
-                       icon=":material/folder_code:")
-st.sidebar.link_button("LinkedIn", "https://linkedin.com/in/angela0zhao",
-                       icon=":material/link:")
-st.sidebar.link_button("Personal Website", "https://ang-zhao.github.io/angzhao.github.io/",
-                       icon=":material/person:")
-st.sidebar.link_button("Google Scholar", "https://scholar.google.com/citations?hl=en&user=Vc9Pn4YAAAAJ",
-                       icon=":material/fingerprint:")
+# st.sidebar.link_button("GitHub",   "https://github.com/ang-zhao",
+#                        icon=":material/folder_code:")
+# st.sidebar.link_button("LinkedIn", "https://linkedin.com/in/angela0zhao",
+#                        icon=":material/link:")
+# st.sidebar.link_button("Personal Website", "https://ang-zhao.github.io/angzhao.github.io/",
+#                        icon=":material/person:")
+# st.sidebar.link_button("Google Scholar", "https://scholar.google.com/citations?hl=en&user=Vc9Pn4YAAAAJ",
+#                        icon=":material/fingerprint:")
 
 st.sidebar.title("Parameters")
-st.sidebar.markdown("## ⓵ Portfolio parameters")
+st.sidebar.markdown("## ⓵ Portfolio tab parameters")
 # --- File + tickers ---------------------------------------------------------
 csv_path = st.sidebar.text_input("CSV path", value= Path("data")/"prices.csv")
 all_tickers_default = [
@@ -306,6 +306,13 @@ with intro_tab:
         * Examples use daily prices 2014-present; swap in your own CSV for other assets. yfinance implementation in progress. 
         * Educational tool only; **not** investment advice.
         ---
+
+        ### ⑤ Connnect with me
+
+        [GitHub](https://github.com/ang-zhao)
+        [LinkedIn](https://linkedin.com/in/angela0zhao)  
+        [Personal Website](https://ang-zhao.github.io/angzhao.github.io/)  
+        [Google Scholar](https://scholar.google.com/citations?hl=en&user=Vc9Pn4YAAAAJ)
         """
     )
 
@@ -459,7 +466,7 @@ with portfolio_tab:
 # Place this block under `with tab_sim:` in streamlit_app.py
 with simulation_tab:
     # ----------------- Simulations tab ---------------------------------
-    st.header("CUSUM simulation explorer")
+    st.header("Simulation tab explorer")
 
     # ❶ Layout: big plot area (col_main) + slim control column (col_ctrl)
     # col_main, col_ctrl = st.columns([3, 1])
