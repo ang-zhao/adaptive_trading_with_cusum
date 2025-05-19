@@ -3,6 +3,7 @@ streamlit>=1.22
 pandas>=2.2
 numpy>=1.26
 matplotlib>=3.8
+plotly>=2.3
 
 # Project dependencies
 yfinance>=0.2
